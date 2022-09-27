@@ -1,0 +1,137 @@
+:root {
+    --sky-blue: #5955b3;
+    --dark-blue: #3c3797;
+    --dark-light: #7c7878;
+    --black: #151515;
+    --white: #ffffff;
+    --indigo-blue: #3c2f60;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+
+.navbar .navbar-logo {
+    position: absolute;
+    left: 80px;
+}
+
+.navbar .navbar-logo:hover {
+    cursor: pointer;
+}
+
+.navbar-logo img {
+    width: 90px;
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    position: absolute;
+    left: 300px;
+    top: 8px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul>li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: var(--dark-light);
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: var(--black);
+}
+
+.navbar .navbar-btn {
+    display: flex;
+    position: absolute;
+    right: 80px;
+}
+
+.navbar .navbar-btn .btn {
+    background-color: var(--sky-blue);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.navbar .navbar-btn .btn:hover {
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding-left: 140px;
+}
+
+.hero-section .hero-text {
+    position: relative;
+}
+
+.hero-section .hero-text h1 {
+    color: var(--indigo-blue);
+    font-size: 55px;
+    padding-right: 28px;
+}
+
+.hero-section .hero-text span {
+    color: var(--sky-blue);
+}
+
+.hero-section .hero-text p {
+    padding-right: 80px;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.hero-section .hero-text .btn {
+    background-color: var(--sky-blue);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.hero-section .hero-text .btn:hover {
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.hero-section .hero-banner img {
+    height: 475px;
+}
